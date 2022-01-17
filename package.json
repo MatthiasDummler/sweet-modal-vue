@@ -1,6 +1,6 @@
 {
   "name": "sweet-modal-vue",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "SweetModal library for use with Vue.js",
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -11,8 +11,6 @@
     "css-loader": "^0.14.5",
     "file-loader": "^0.8.4",
     "imports-loader": "^0.6.5",
-    "node-sass": "^4.5.3",
-    "sass-loader": "^6.0.6",
     "script-loader": "^0.7.0",
     "style-loader": "^0.13.2",
     "svg-inline-loader": "^0.7.1",
@@ -30,10 +28,8 @@
     "vue": "2.x"
   },
   "scripts": {
-    "dev": "webpack-dev-server --config docs/webpack.config.js --inline --hot",
-    "build": "npm run build-src && npm run build-docs",
-    "build-src": "webpack --config src/webpack.config.js --progress --hide-modules",
-    "build-docs": "webpack --config docs/webpack.config.js --progress --hide-modules"
+    "build": "npm run build-src",
+    "build-src": "webpack --config src/webpack.config.js --progress --hide-modules"
   },
   "repository": {
     "type": "git",
